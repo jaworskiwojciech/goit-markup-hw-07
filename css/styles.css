@@ -379,6 +379,31 @@ fieldset:nth-child(4) {
   border-color: var(--blue-color);
   background-color: var(--blue-color);
 }
+
+/* =====SECOND SECTION===== */
+
+.section-secondary {
+  display: flex;
+  margin: 0;
+  gap: 30px;
+}
+.icon-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 270px;
+  height: 120px; */
+  padding: 25px 100px;
+  background-color: var(--gray-background);
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+}
+
 /* ==========OTHER STYLES========== */
 
 .list-style {
@@ -559,13 +584,6 @@ footer {
   color: var(--description-color);
 }
 
-.section-secondary {
-  display: flex;
-  /* justify-content: space-between; */
-  /* padding-block: 94px; */
-  margin: 0;
-  gap: 30px;
-}
 .header-secondary {
   display: flex;
   justify-content: center;
@@ -645,22 +663,7 @@ footer {
 .portfolio-main-container {
   margin: 94px;
 }
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
-}
-.icon-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 270px;
-  height: 120px; */
-  padding: 25px 100px;
-  background-color: var(--gray-background);
-}
+
 .team-social {
   display: flex;
   justify-content: center;
