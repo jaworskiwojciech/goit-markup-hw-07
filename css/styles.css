@@ -444,6 +444,74 @@ fieldset:nth-child(4) {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+/* =====TEAM SECTION===== */
+
+.team-section {
+  background-color: var(--gray-background);
+  padding-block: 94px;
+}
+.header-team,
+.header-clients {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.team-list-style {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0px;
+}
+.team-member {
+  background: var(--white-background);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-name {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--main-font-color);
+}
+.team-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--description-color);
+}
+.team-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+.social-background {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-background);
+  border-radius: 22px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--grey-icon-color);
+  transition: background-color var(--transition-duration) var(--cubic-bezier),
+    fill var(--transition-duration) var(--cubic-bezier);
+  will-change: background-color, fill;
+}
+.social-background:hover,
+.footer-social-background:hover {
+  background-color: var(--blue-color);
+  fill: var(--white-background);
+}
 /* ==========OTHER STYLES========== */
 
 .list-style {
@@ -522,19 +590,7 @@ fieldset:nth-child(4) {
   margin-left: 24px;
   margin-top: 20px;
 }
-.team-list-style {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0px;
-}
-.team-member {
-  background: var(--white-background);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+
 .team-description {
   display: flex;
   flex-direction: column;
@@ -590,31 +646,6 @@ footer {
   color: #757575;
 }
 
-.team-name {
-  display: flex;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--main-font-color);
-}
-.team-description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  color: var(--description-color);
-}
-
-.header-team,
-.header-clients {
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
 .clients-list-style {
   padding: 0;
   list-style-type: none;
@@ -640,10 +671,6 @@ footer {
   height: 60.04px;
 }
 
-.team-section {
-  background-color: var(--gray-background);
-  padding-block: 94px;
-}
 footer {
   padding: 60px 0;
 }
@@ -658,30 +685,6 @@ footer {
   margin: 94px;
 }
 
-.team-social {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  gap: 10px;
-}
-.social-background {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  background-color: var(--white-background);
-  border-radius: 22px;
-  justify-content: center;
-  align-items: center;
-  fill: var(--grey-icon-color);
-  transition: background-color var(--transition-duration) var(--cubic-bezier),
-    fill var(--transition-duration) var(--cubic-bezier);
-  will-change: background-color, fill;
-}
-.social-background:hover,
-.footer-social-background:hover {
-  background-color: var(--blue-color);
-  fill: var(--white-background);
-}
 .join-us,
 .newsletter-description {
   font-weight: 700;
@@ -715,26 +718,6 @@ footer {
 .social-icon-footer {
   fill: var(--white-background);
 }
-
-/* .checkmark::after {
-  content: "";
-  position: absolute;
-  fill: #eee;
-  opacity: 0;
-  transition: opacity var(--transition-duration) var(--cubic-bezier);
-} */
-/* .form-description input:checked ~ .checkmark:after {
-  opacity: 1;
-} */
-/* .form-description .checkmark::after {
-  left: 4.5px;
-  top: 1px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-} */
 
 /* ==========NEWSLETTER========== */
 
