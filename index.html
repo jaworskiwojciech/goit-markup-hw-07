@@ -16,38 +16,38 @@
   </head>
   <body>
     <header class="header container">
-        <a href="index.html" class="webstudio"
-          >Web<span class="studio">Studio</span></a
-        >
-        <nav>
-          <ul class="list-style nav-list">
-            <li>
-              <a href="index.html" class="navigation-item nav-agency-highlight"
-                >Agencja</a
-              >
-            </li>
-            <li>
-              <a href="portfolio.html" class="navigation-item">Portfolio</a>
-            </li>
-            <li><a href="" class="navigation-item">Kontakt</a></li>
-          </ul>
-        </nav>
-        <a class="contact-item header-email" href="mailto:info@example.com"
-          ><svg class="envelope" width="16" height="12">
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>
-          info@devstudio.com</a
-        >
-        <a class="contact-item header-telephone" href="tel:+48111111111"
-          ><svg class="telephone" width="10" height="16">
-            <use href="./images/icons.svg#icon-telephone"></use>
-          </svg>
-          +48 111 111 111</a
-        >
+      <a href="index.html" class="logo"
+        >Web<span class="logo__studio">Studio</span></a
+      >
+      <nav>
+        <ul class="navigation list-style">
+          <li>
+            <a href="index.html" class="navigation__item nav-agency-highlight"
+              >Agencja</a
+            >
+          </li>
+          <li>
+            <a href="portfolio.html" class="navigation__item">Portfolio</a>
+          </li>
+          <li><a href="#" class="navigation__item">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a class="contact-item header-email" href="mailto:info@example.com"
+        ><svg class="contact-item__envelope" width="16" height="12">
+          <use href="./images/icons.svg#icon-envelope"></use>
+        </svg>
+        info@devstudio.com</a
+      >
+      <a class="contact-item header-telephone" href="tel:+48111111111"
+        ><svg class="contact-item__telephone" width="10" height="16">
+          <use href="./images/icons.svg#icon-telephone"></use>
+        </svg>
+        +48 111 111 111</a
+      >
     </header>
     <main>
       <section class="section-primary">
-        <h1 class="header-primary">
+        <h1 class="section-primary__header">
           EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
         <button type="button" class="index-button" data-modal-open>
@@ -400,12 +400,14 @@
     <footer>
       <div class="footer-style container">
         <div>
-          <a href="index.html" class="webstudio"
+          <a href="index.html" class="logo"
             >Web<span class="studio-in-footer">Studio</span></a
           >
           <ul class="list-in-footer">
             <li>
-              <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+              <address class="address">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </address>
             </li>
             <li>
               <a class="contact-item" href="mailto:info@example.com"
