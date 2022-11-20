@@ -452,7 +452,7 @@ fieldset:nth-child(4) {
   padding-block: 94px;
 }
 .team__header,
-.header-clients {
+.clients__header {
   display: flex;
   justify-content: center;
   font-weight: 700;
@@ -515,6 +515,30 @@ fieldset:nth-child(4) {
   background-color: var(--blue-color);
   fill: var(--white-background);
 }
+
+/* ===== CLIENTS SECTION ===== */
+
+.clients__list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.client__icon {
+  display: flex;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--grey-icon-color);
+  transition: border var(--transition-duration) var(--cubic-bezier),
+    fill var(--transition-duration) var(--cubic-bezier);
+  will-change: border, fill;
+}
+.client__icon:hover {
+  border-color: var(--blue-color);
+  fill: var(--blue-color);
+}
+
 /* ==========OTHER STYLES========== */
 
 .list-style {
@@ -642,31 +666,6 @@ footer {
   margin-left: 24px;
   margin-top: 0px;
   color: #757575;
-}
-
-.clients-list-style {
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-.client-icon-background {
-  display: flex;
-  padding: 16px 32px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  fill: var(--grey-icon-color);
-  transition: border var(--transition-duration) var(--cubic-bezier),
-    fill var(--transition-duration) var(--cubic-bezier);
-  will-change: border, fill;
-}
-.client-icon-background:hover {
-  border-color: var(--blue-color);
-  fill: var(--blue-color);
-}
-.client-logo {
-  width: 106px;
-  height: 60.04px;
 }
 
 footer {
