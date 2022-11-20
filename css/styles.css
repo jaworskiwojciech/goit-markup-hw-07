@@ -247,7 +247,7 @@ body {
 
 /* === modal form === */
 
-.modal-header {
+.modal__header {
   margin-block: 0px 30px;
   font-weight: 700;
   font-size: 20px;
@@ -267,7 +267,7 @@ body {
   border: 1px solid var(--fieldset-border-color);
   border-radius: 4px;
 }
-.label {
+.fieldset__label {
   position: absolute;
   left: 0px;
   top: -17px;
@@ -277,10 +277,10 @@ body {
   letter-spacing: 0.01em;
   color: var(--contact-color);
 }
-.form-icon {
+.fieldset__icon {
   margin-right: 15px;
 }
-.input,
+.fieldset__input,
 .input-comment {
   border: none;
   width: 100%;
@@ -288,10 +288,10 @@ body {
 .input-comment {
   outline: none;
 }
-.input:focus {
+.fieldset__input:focus {
   outline: none;
 }
-.input::placeholder {
+.fieldset__input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -310,7 +310,15 @@ fieldset:nth-child(4) {
   display: block;
   margin-bottom: 20px;
 }
-.form-description {
+
+/* === form bottom === */
+
+.modal-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-bottom__description {
   position: relative;
   display: flex;
   align-items: center;
@@ -324,11 +332,10 @@ fieldset:nth-child(4) {
   cursor: pointer;
   /* margin-inline: auto; */
 }
-
-.form-description .acceptation {
+.modal-bottom__description .acceptation {
   padding-top: 3px;
 }
-.form-description a {
+.modal-bottom__description a {
   color: var(--blue-color);
 }
 .form-button {
@@ -344,12 +351,34 @@ fieldset:nth-child(4) {
   border-radius: 4px;
   cursor: pointer;
 }
-.form-bottom-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
+/* ==========CHECKBOX========== */
+
+.modal-bottom__description input {
+  position: absolute;
+  cursor: pointer;
+  margin-right: 8px;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: -24px;
+  height: 16px;
+  width: 16px;
+  fill: white;
+  border: 1px solid var(--fieldset-border-color);
+  border-radius: 2px;
+  background-color: white;
+  transition: background-color var(--transition-duration) var(--cubic-bezier),
+    border-color var(--transition-duration) var(--cubic-bezier);
+}
+.modal-bottom__description input:checked ~ .checkmark {
+  border-color: var(--blue-color);
+  background-color: var(--blue-color);
+}
 /* ==========OTHER STYLES========== */
 
 .list-style {
@@ -690,34 +719,6 @@ footer {
   fill: var(--white-background);
 }
 
-/* ==========CHECKBOX========== */
-
-.form-description input {
-  position: absolute;
-  cursor: pointer;
-  margin-right: 8px;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 6px;
-  left: -24px;
-  height: 16px;
-  width: 16px;
-  fill: white;
-  border: 1px solid var(--fieldset-border-color);
-  border-radius: 2px;
-  background-color: white;
-  transition: background-color var(--transition-duration) var(--cubic-bezier),
-    border-color var(--transition-duration) var(--cubic-bezier);
-}
-.form-description input:checked ~ .checkmark {
-  border-color: var(--blue-color);
-  background-color: var(--blue-color);
-}
 /* .checkmark::after {
   content: "";
   position: absolute;

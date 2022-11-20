@@ -61,48 +61,58 @@
               </svg>
             </button>
             <div>
-              <h3 class="modal-header">
+              <h3 class="modal__header">
                 Zostaw swoje dane w formularzu poniżej
               </h3>
               <form>
                 <fieldset class="fieldset">
-                  <label class="label" for="name">Imię</label>
-                  <svg class="form-icon" width="18" height="18">
+                  <label class="fieldset__label" for="name">Imię</label>
+                  <svg class="fieldset__icon" width="18" height="18">
                     <use href="./images/icons.svg#person-form"></use>
                   </svg>
-                  <input class="input" type="text" name="name" id="name" />
+                  <input
+                    class="fieldset__input"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
                 </fieldset>
                 <fieldset class="fieldset">
-                  <label class="label" for="telephone">Telefon</label>
-                  <svg class="form-icon" width="18" height="18">
+                  <label class="fieldset__label" for="telephone">Telefon</label>
+                  <svg class="fieldset__icon" width="18" height="18">
                     <use href="./images/icons.svg#phone-form"></use>
                   </svg>
                   <input
-                    class="input"
+                    class="fieldset__input"
                     type="text"
                     name="telephone"
                     id="telephone"
                   />
                 </fieldset>
                 <fieldset class="fieldset">
-                  <label class="label" for="email">Email</label>
-                  <svg class="form-icon" width="18" height="18">
+                  <label class="fieldset__label" for="email">Email</label>
+                  <svg class="fieldset__icon" width="18" height="18">
                     <use href="./images/icons.svg#email-form"></use>
                   </svg>
-                  <input class="input" type="text" name="email" id="email" />
+                  <input
+                    class="fieldset__input"
+                    type="text"
+                    name="email"
+                    id="email"
+                  />
                 </fieldset>
                 <fieldset class="fieldset">
-                  <label class="label" for="comment">Komentarz</label>
+                  <label class="fieldset__label" for="comment">Komentarz</label>
                   <input
-                    class="input"
+                    class="fieldset__input"
                     type="text"
                     name="comment"
                     id="comment"
                     placeholder="Wprowadź tekst"
                   />
                 </fieldset>
-                <div class="form-bottom-container">
-                  <label class="form-description" for="checkbox">
+                <div class="modal-bottom">
+                  <label class="modal-bottom__description" for="checkbox">
                     <input
                       class="checkbox"
                       type="checkbox"
@@ -451,7 +461,7 @@
           <form class="footer-form">
             <fieldset class="fieldset footer-fieldset">
               <input
-                class="input newsletter-input"
+                class="fieldset__input newsletter-input"
                 placeholder="E-mail"
                 name="email"
               />
