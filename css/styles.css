@@ -387,21 +387,24 @@ fieldset:nth-child(4) {
   margin: 0;
   gap: 30px;
 }
-.icon-background {
+.section-secondary__background {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 270px;
-  height: 120px; */
   padding: 25px 100px;
   background-color: var(--gray-background);
 }
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
+.section-secondary__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-top: 30px;
+}
+.section-secondary__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--description-color);
 }
 
 /* ==========OTHER STYLES========== */
@@ -634,18 +637,7 @@ footer {
   padding: 0px 0px 94px 0px;
   margin: 0px;
 }
-.header-tertiary {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-top: 30px;
-}
-.description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--description-color);
-}
+
 .team-section {
   background-color: var(--gray-background);
   padding-block: 94px;
