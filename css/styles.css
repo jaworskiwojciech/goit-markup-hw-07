@@ -407,23 +407,34 @@ fieldset:nth-child(4) {
   color: var(--description-color);
 }
 
-/* ==========OTHER STYLES========== */
+/* =====THIRD SECTION===== */
 
-.list-style {
-  list-style-type: none;
-  padding: 0px;
+.offer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 94px 0px;
+  margin: 0px;
 }
-.offer-picture {
+.offer__header {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+.offer__picture {
   position: relative;
 }
-.offer-description {
+.offer__description {
   width: 100%;
   position: absolute;
   bottom: 4px;
   padding-block: 27px;
   background: var(--offer-description-background);
 }
-.offer-paragraph {
+.offer__paragraph {
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -433,6 +444,13 @@ fieldset:nth-child(4) {
   text-transform: uppercase;
   color: #ffffff;
 }
+/* ==========OTHER STYLES========== */
+
+.list-style {
+  list-style-type: none;
+  padding: 0px;
+}
+
 .portfolio-buttons {
   list-style-type: none;
   padding: 0px;
@@ -587,15 +605,6 @@ footer {
   color: var(--description-color);
 }
 
-.header-secondary {
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  margin: 0px;
-  margin-bottom: 50px;
-}
 .header-team,
 .header-clients {
   display: flex;
@@ -629,13 +638,6 @@ footer {
 .client-logo {
   width: 106px;
   height: 60.04px;
-}
-
-.section-tertiary {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 0px 94px 0px;
-  margin: 0px;
 }
 
 .team-section {
