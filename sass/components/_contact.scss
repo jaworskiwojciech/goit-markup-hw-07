@@ -1,0 +1,37 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: var(--contact-color);
+  fill: var(--contact-color);
+  text-decoration: none;
+  transition: color var(--transition-duration) var(--cubic-bezier),
+    fill var(--transition-duration) var(--cubic-bezier);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--blue-color);
+  fill: var(--blue-color);
+}
+.header-telephone,
+.header-email {
+  display: flex;
+  align-items: center;
+}
+.contact-item__telephone,
+.contact-item__envelope {
+  fill: var(--contact-color);
+  margin-right: 5px;
+}
+.contact-item__telephone:hover,
+.contact-item__envelope:hover {
+  fill: var(--blue-color);
+}
+.header-email:hover,
+.header-telephone:hover {
+  fill: var(--blue-color);
+  transition: transform;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
