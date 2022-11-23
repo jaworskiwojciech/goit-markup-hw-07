@@ -13,8 +13,8 @@
   transition: border var(--transition-duration) var(--cubic-bezier),
     fill var(--transition-duration) var(--cubic-bezier);
   will-change: border, fill;
-}
-.client__icon:hover {
-  border-color: var(--blue-color);
-  fill: var(--blue-color);
+  &:hover {
+    border-color: var(--blue-color);
+    fill: var(--blue-color);
+  }
 }
