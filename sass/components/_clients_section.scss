@@ -13,6 +13,7 @@
     transition: border var(--transition-duration) var(--cubic-bezier),
       fill var(--transition-duration) var(--cubic-bezier);
     will-change: border, fill;
+    
     &:hover {
       border-color: var(--blue-color);
       fill: var(--blue-color);
