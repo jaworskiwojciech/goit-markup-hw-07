@@ -14,7 +14,8 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-right: 93px;
-}
-.logo__studio {
-  color: var(--black-color);
+
+  &__studio {
+    color: var(--black-color);
+  }
 }

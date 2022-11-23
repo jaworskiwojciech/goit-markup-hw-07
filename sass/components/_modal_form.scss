@@ -17,19 +17,19 @@
   padding-left: 15px;
   border: 1px solid var(--fieldset-border-color);
   border-radius: 4px;
-}
-.fieldset__label {
-  position: absolute;
-  left: 0px;
-  top: -17px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--contact-color);
-}
-.fieldset__icon {
-  margin-right: 15px;
+  &__label {
+    position: absolute;
+    left: 0px;
+    top: -17px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--contact-color);
+  }
+  &__icon {
+    margin-right: 15px;
+  }
 }
 .fieldset__input,
 .input-comment {

@@ -27,23 +27,24 @@
 }
 .socials {
   margin-left: 70px;
-}
-.socials__container {
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-}
-.socials__background {
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color var(--transition-duration) var(--cubic-bezier);
-  will-change: background-color;
-  fill: var(--white-background);
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  &__background {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--transition-duration) var(--cubic-bezier);
+    will-change: background-color;
+    fill: var(--white-background);
+  }
 }
 .address {
   font-style: normal;
