@@ -2,23 +2,24 @@
   display: flex;
   margin: 0;
   gap: 30px;
-}
-.section-secondary__background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 100px;
-  background-color: var(--gray-background);
-}
-.section-secondary__header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  margin-top: 30px;
-}
-.section-secondary__description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--description-color);
+
+  &__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 100px;
+    background-color: var(--gray-background);
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 30px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--description-color);
+  }
 }
