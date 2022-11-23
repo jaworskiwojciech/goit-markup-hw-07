@@ -20,9 +20,12 @@
   fill: var(--contact-color);
   margin-right: 5px;
   transition: fill var(--transition-duration) var(--cubic-bezier);
-  
+
   &:hover,
   &:focus {
     fill: var(--blue-color);
   }
+}
+.contact-item:hover .contact-item__icon {
+  fill: var(--blue-color);
 }
