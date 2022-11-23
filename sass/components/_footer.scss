@@ -1,6 +1,10 @@
 .logo--footer {
   color: var(--white-background);
 }
+.footer {
+  background-color: var(--footer-section-color);
+  padding: 60px 0;
+}
 .footer__list {
   display: flex;
   flex-direction: column;
@@ -11,10 +15,7 @@
 .footer-style {
   display: flex;
 }
-.footer {
-  background-color: var(--footer-section-color);
-  padding: 60px 0;
-}
+
 .socials__header,
 .newsletter__header {
   font-weight: 700;
