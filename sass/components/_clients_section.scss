@@ -3,18 +3,19 @@
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-}
-&__icon {
-  display: flex;
-  padding: 16px 32px;
-  border: 1px solid var(--grey-icon-color);
-  border-radius: 4px;
-  fill: var(--grey-icon-color);
-  transition: border var(--transition-duration) var(--cubic-bezier),
-    fill var(--transition-duration) var(--cubic-bezier);
-  will-change: border, fill;
-  &:hover {
-    border-color: var(--blue-color);
-    fill: var(--blue-color);
+
+  &__icon {
+    display: flex;
+    padding: 16px 32px;
+    border: 1px solid var(--grey-icon-color);
+    border-radius: 4px;
+    fill: var(--grey-icon-color);
+    transition: border var(--transition-duration) var(--cubic-bezier),
+      fill var(--transition-duration) var(--cubic-bezier);
+    will-change: border, fill;
+    &:hover {
+      border-color: var(--blue-color);
+      fill: var(--blue-color);
+    }
   }
 }
